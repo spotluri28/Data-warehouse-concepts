@@ -1,11 +1,17 @@
 # Data-warehouse-concepts
 
 Slowly Changing Dimension (SCD) in Data Warehouse
+
 A Slowly Changing Dimension (SCD) is a dimension that stores and manages both current and historical data overtime in data warehouse. It is considered and implemented as one of the most critical ETL task in tracking the history of dimension records.
+
 Slowly Changing Dimension (SCD) are dimensions that changes slowly over time, rather than regular bases. In data warehouse environment, there may be requirement to keep track of the change in dimension value and are used to report historical data at any given of time.
+
 We can implement slowly changing dimension (SCD) using various approaches such as:
-	Type 0: Always retains original
-	Type 1: Keeps latest data, old data is overwritten
+
+1.	Type 0: Always retains original
+
+2.	Type 1: Keeps latest data, old data is overwritten
+
 	Type 2: Keeps the history of old data by adding new row
 	Type 3: Adds new attribute to store changed value
 	Type 4: Uses separate history table
